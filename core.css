@@ -2163,14 +2163,9 @@ input.da-input, input.da-input:focus {
 svg.slider-TkfMQL svg {
   display: none;
 }
-.container-3auIfb:not([style*="125"]) {
-  background-color: var(--primaryGradient1) !important;
-}
 
-/* Channels Nov 2020 */
-.container-3w7J-x {
-    background: var(--backgroundDark)!important;
-}
+
+
 
 
 }
