@@ -2172,8 +2172,7 @@ svg.slider-TkfMQL svg {
     background: var(--backgroundDark)!important;
 }
 
-.panels-j1Uci_ {
-    background: var(--backgroundDark)!important;
+
 }
 
 .content-1x5b-n::after, .wrapper-2jXpOf.modeSelected-346R90 .content-1x5b-n::after {
@@ -2190,11 +2189,6 @@ svg.slider-TkfMQL svg {
     transition: all .2s ease
 }
 
-
-
-.wrapper-2jXpOf.modeSelected-346R90 .content-1x5b-n {
-    background-color: rgba(0,0,0,.45)!important
-}
 
 .wrapper-2jXpOf.modeSelected-346R90 .content-1x5b-n::after,.wrapper-2jXpOf:hover .content-1x5b-n::after {
     transform: translateX(0)
