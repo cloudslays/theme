@@ -1,53 +1,31 @@
-//META{"name":"Windows Activity buttons inside Discord addon","description":"Makes the buttons minimize, maximize and close inside discord window","author":"Ruben7173","version":"1.0"}*// {}
-
-/* changes position of top bar icons from right to left */
-.iconMargin-2YXk4F, .da-app .search .search-bar, .divider-2PMBlV, .theme-dark .searchPopout-1vUlP3 {
-	position: relative;
-    right: 120px;
+.platform-win .typeWindows-1za-n7 {
+    height: 9px;
+    margin-top: 0;
+    position: absolute;
+    top: 1px;
+    left: 0;
+    width: 100%;
+    background: transparent;
 }
-/* fixes an issue because of changing position of search box */
-.search {
-    z-index: 0;
+.platform-win .winButtonClose-1HsbF- {
+    border-top-right-radius: var(--TB-tr-roundness);
 }
-/* windows control buttons changing position to bottom to the top bar */
-.winButton-iRh8-Z {
-	position: relative;
-    bottom: 530px;
-	right: 13px;
-	top: 15px;
-	width: 2%;
-}
-
-/* hiding most of the windows control, not completely so it doesnt lose the dragging functionality */
-.typeWindows-1za-n7 {
-	height: 4px!important;
-    margin-top: 0px!important;
-}
-
-/* removes watermark */
-.wordmark-2iDDfm {
-	display:none;
-}
-/* position of some stuff */
-.browseSearch-e9jF-f, .libraryFilter-31ZUa2 {
-	margin-right: 130px;
-}
-/* a small fix for channel info */
-.da-topic {
-	max-width: 80%!important;
-}
-
-/* fix search area */
-.search-l1Wz-Q {
-	position: relative;
-    right: 120px;
-}
-.search-l1Wz-Q {
-    margin: 0 4px 0 8px;
+.platform-win .winButton-iRh8-Z {
     position: relative;
-    right: 120px;
+    top: calc(var(--TB-position-top, 0px) - 1px);
+    right: var(--TB-position-right, 0px);
+    height: var(--TB-height, 48px);
+    width: var(--TB-width, 40px);
 }
-
-.toolbar-1t6TWx {
-	margin-right: 100px;
+.platform-win .winButton-iRh8-Z:not(.winButtonClose-1HsbF-):hover {
+    background-color: rgba(255,255,255,0.1);
+}
+.platform-win .container-1r6BKw {
+    padding-right: var(--TB-header-padding, 125px);
+}
+.platform-win .wordmarkWindows-1v0lYD {
+    display: none;
+}
+.platform-win  #app-mount.bd-detached-editor .winButton-iRh8-Z {
+    right: 30%;
 }
